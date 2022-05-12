@@ -1,5 +1,5 @@
 ---
-title: "thid post in heading from meta"
+title: "third post"
 date: "2022-05-12"
 ---
 

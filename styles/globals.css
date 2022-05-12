@@ -10,17 +10,8 @@ a {
 a:focus, a:hover {
     text-decoration: underline;
 }
-/* 
-.NavBar ul {
+
+li {
     list-style-type: none;
-    padding: 0;
+    padding-top: 20px;
 }
-
-.NavBar li {
-    display: inline;
-    margin-left: 0.75rem;
-}
-
-.NavBar li:not(:first-child) {
-    margin-left: 0.75rem;
-} */

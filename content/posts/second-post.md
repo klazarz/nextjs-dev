@@ -1,5 +1,5 @@
 ---
-title: "Second post in heading from meta"
+title: "Second post"
 date: "2022-05-12"
 ---
 

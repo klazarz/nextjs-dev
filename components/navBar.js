@@ -19,6 +19,8 @@ function NavBar() {
                 ul {
                     list-style-type: none;
                     padding: 0;
+                    background-color: rgb(243, 226, 204);
+                    font-size: 1.6rem;
                 }
                 li {
                     display: inline;

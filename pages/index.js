@@ -1,27 +1,27 @@
 import Link from 'next/link';
+import { getPosts } from '/lib/posts';
 
+export async function getStaticProps() {
+    const posts = await getPosts();
+    return {
+        props: { posts },
+    };
+}
 
-function HomePage() {
+function HomePage({posts}) {
+    console.log(posts)
     return (
         <>
             <main>
-                <h1>hafur.com</h1>
+                <h1>My Next.js App</h1>
                 <ul>
-                    <li>
-                        <Link href="/posts/first-post">
-                            <a>First Post</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/posts/second-post">
-                            <a>Second Post</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/posts/my-life">
-                            <a>Miy life</a>
-                        </Link>
-                    </li>
+                    {posts.map((post) => (
+                        <li key={post.slug}>
+                            <Link href={`/posts/${post.slug}`}>
+                                <a>{post.title}</a>
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </main>
         </>
