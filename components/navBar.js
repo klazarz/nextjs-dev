@@ -14,7 +14,6 @@ function NavBar() {
                         <a>about</a>
                     </Link>
                 </li>
-              
             </ul>
             <style jsx>{`
                 ul {
@@ -28,9 +27,7 @@ function NavBar() {
                 li:not(:first-child) {
                     margin-left: 0.75rem;
                 }
-                
             `}
-
             </style>
         </nav>
     );

@@ -1,4 +1,7 @@
-# My first blog post
+---
+title: "First post in heading from meta"
+date: "2022-05-12"
+---
 
 This is my first text.
 
